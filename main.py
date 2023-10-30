@@ -5,7 +5,8 @@ from langchain.callbacks.streamlit import StreamlitCallbackHandler  # Import Str
 
 st.set_page_config(page_title="St. Albert's AI", page_icon="Profile_Avatar.jpg")
 st.sidebar.image("Profile_Avatar.jpg")
-st.info("`I am an AI that can help you write copy about St. Albert's and the St. Albert's community. What can I help you with?")
+st.title("St. Albert's AI")
+st.info("I am an AI that can help you write copy about St. Albert's and the St. Albert's community. What can I help you with?")
 st.cache_resource.clear()
 
 from typing import Any, List, Optional, Sequence, Tuple, Union, Type
@@ -407,7 +408,6 @@ def display_previous_messages():
         st.chat_message(msg["role"]).write(msg["content"])
 
 initialize_chat_history()
-st.title("VNTANA Sales AI")
 display_previous_messages()
 
 def convert_to_json(data):
