@@ -1,0 +1,6 @@
+langchain==0.0.240
+weaviate-client
+pydantic
+openai
+tiktoken
+google-search-results
