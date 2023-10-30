@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from langchain.callbacks.streamlit import StreamlitCallbackHandler  # Import Streamlit callback
 
-st.set_page_config(page_title="VNTANA Sales", page_icon="Profile_Avatar.jpg")
+st.set_page_config(page_title="St. Albert's AI", page_icon="Profile_Avatar.jpg")
 st.sidebar.image("Profile_Avatar.jpg")
 st.info("`I am an AI that can help you write copy about St. Albert's and the St. Albert's community. What can I help you with?")
 st.cache_resource.clear()
