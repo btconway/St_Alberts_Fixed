@@ -323,7 +323,7 @@ class VNTANAsalesQueryTool(BaseTool):
                 concepts = weaviate_query.split(",")  # Split the query into individual concepts
                 for concept in concepts:
                     nearText = {"concepts": [concept.strip()]}  # Search for each concept individually
-                    resp = client.query.get(class_name, ["content"]).with_near_text(nearText).with_limit(5).do()
+                    resp = client.query.get(class_name, ["content"]).with_near_text(nearText).with_limit(3).do()
                     resp = self.truncate_response(resp)  # Truncate the response if it exceeds 3000 characters
                     results.append(resp)
                     resp_single_line = json.dumps(resp).replace('\n', ' ')
