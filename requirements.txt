@@ -1,4 +1,4 @@
-langchain==0.0.240
+langchain
 weaviate-client
 pydantic
 openai
